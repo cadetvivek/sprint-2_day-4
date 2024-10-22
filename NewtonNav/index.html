@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton School Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .navbar {
+            background-color: #0A1628;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .logo img {
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .new-badge {
+            background-color: #FFD700;
+            color: #000;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 4px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .more-dropdown {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .signup-btn {
+            background-color: #0066FF;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .signup-btn:hover {
+            background-color: #0052CC;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .navbar {
+                padding: 12px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo">
+                <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/63a9a311ecd826aa5be44d4e_NS%20Logo%20primary%20white-p-500.png" alt="Newton School">
+               
+            </a>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Data Science & AI</a>
+                <a href="#" class="nav-link">B.Tech in CS & AI<span class="new-badge">NEW</span></a>
+                <a href="#" class="nav-link">Newton Edge</a>
+                <a href="#" class="nav-link">Refer & Earn</a>
+            </div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="more-dropdown">
+                <span class="nav-link">More</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+                    <path d="M7 10l5 5 5-5z"/>
+                </svg>
+            </div>
+            <a href="#" class="signup-btn">Sign up</a>
+        </div>
+    </nav>
+</body>
+</html>
